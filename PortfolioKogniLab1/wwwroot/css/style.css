@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Dongle&family=Fascinate+Inline&display=swap');
+
+:root {
+    --primary-100: #D2F1E4;
+    --primary-200: #FBCAEF;
+    --primary-300: #F865B0;
+    --primary-400: #E637BF;
+    --primary-500: #48304D;
+
+    --font-color: var(--primary-500);
+    --background: var(--primary-200);
+
+    --body-font: "Alumni Sans Pinstripe", sans-serif;
+    --header-font: "Dongle", sans-serif;
+    --special-font: "Fascinate Inline", system-ui;
+    
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--background);
+    font-family: var(--body-font);
+}
+
+h1,h2,h3,h4,h5 
+{
+    font-family: var(--header-font);
+}
+
+.specialText
+{
+    font-family: var(--special-font);
+}
+
+i {
+    color: var(--primary-300);
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
