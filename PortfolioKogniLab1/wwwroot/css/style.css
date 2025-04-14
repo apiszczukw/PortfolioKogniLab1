@@ -17,6 +17,7 @@
 }
 
 body {
+    margin: 0;
     color: var(--font-color);
     background-color: var(--background);
     font-family: var(--body-font);
@@ -32,14 +33,54 @@ h1,h2,h3,h4,h5
     font-family: var(--special-font);
 }
 
-i {
-    color: var(--primary-300);
-    font-size: 3rem;
+
+
+/* Menu g³ówne */
+
+.navbar {
+    /*background-color: black;*/
+
+    display: flex;
+    justify-content: center;
 }
 
+.nav-center 
+{
+    /*background-color: white;*/
+    width: 80vw;
+}
 
+.nav-logo > img 
+{
+    height: 6rem;
+}
 
+.nav-header 
+{
+    height: 6rem;
+    font-size: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.btn 
+{
+    cursor: pointer;
+    background-color: var(--primary-300);
+    color: var(--primary-100);
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+}
 
+.nav-btn >  i 
+{
+    font-size: 1.25rem;
+}
 
-
+.nav-links 
+{
+    display: flex;
+    flex-direction: column;
+}
