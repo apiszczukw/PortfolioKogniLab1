@@ -12,7 +12,7 @@
 				<a href="#" class="nav-logo">
 					<img src="~/pictures/logo_wlasciwe.png" />
 				</a>
-				<button class="btn nav-btn" type="button">
+				<button class="btn nav-btn" type="button" onclick="ShowMenu()">
 					<i class="fa-solid fa-bars"></i>
 				</button>
 			</div>
@@ -27,9 +27,18 @@
 		</div>
 	</nav>
 
-	<h1>Moja strona portfolio</h1>
+	<main class="main-section">
+
 	@RenderBody()
 
+	</main>
 
+	<footer class="footer-section">
+		<p> 🍺 Strona wykonana przez <span> Adriannę Piszcz </span> 🍺 </p>
+	</footer>
+
+
+
+	<script src="~/js/site.js"></script>
 </body>
 </html>

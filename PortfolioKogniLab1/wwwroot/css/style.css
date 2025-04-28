@@ -10,8 +10,8 @@
     --font-color: var(--primary-500);
     --background: var(--primary-200);
 
-    --body-font: "Alumni Sans Pinstripe", sans-serif;
-    --header-font: "Dongle", sans-serif;
+    --header-font: "Alumni Sans Pinstripe", sans-serif;
+    --body-font: "Dongle", sans-serif;
     --special-font: "Fascinate Inline", system-ui;
     
 }
@@ -26,6 +26,7 @@ body {
 h1,h2,h3,h4,h5 
 {
     font-family: var(--header-font);
+    margin: 0;
 }
 
 .specialText
@@ -42,6 +43,7 @@ h1,h2,h3,h4,h5
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-center 
@@ -50,8 +52,13 @@ h1,h2,h3,h4,h5
     width: 80vw;
 }
 
-.nav-logo > img 
+.nav-logo 
 {
+    height: 6rem;
+}
+
+
+.nav-logo > img {
     height: 6rem;
 }
 
@@ -83,4 +90,121 @@ h1,h2,h3,h4,h5
 {
     display: flex;
     flex-direction: column;
+
+    height: 0;
+    overflow: hidden;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+.nav-link 
+{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    color: var(--font-color);
+    letter-spacing: 3px;
+    border-top: 1px solid var(--primary-500);
+}
+
+.nav-link:hover 
+{
+    color: var(--primary-300);
+    font-size: 1.4rem;
+}
+
+.nav-links a 
+{
+    text-decoration: none;
+}
+
+.show-links 
+{
+    height: 252px;
+}
+
+
+@media screen and (min-width: 800px)
+{
+    .nav-btn 
+    {
+        display: none;
+    }
+
+    .nav-links {
+        height: auto;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav-link
+    {
+        border-top: none;
+        margin-right: 1rem;
+        padding: 0;
+    }
+
+    .nav-link:hover 
+    {
+        font-size: 1.3rem;
+    }
+
+    .nav-header 
+    {
+        margin-right: 2rem;
+    }
+
+    .nav-center
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-link 
+    {
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    .nav-center
+    {
+        max-width: 1280px;
+    }
+}
+
+
+
+
+/*
+    Styl sekcji g³ównej
+*/
+
+.main-section {
+    padding-top: 2rem;
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: calc(100vh - 4rem - 6rem - 2rem);
+}
+/* wysokoœæ stopki: 4rem
+   wysokoœæ nag³ówka: 6rem
+*/
+
+.footer-section {
+    background-color: var(--primary-500);
+    color: var(--primary-100);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--header-font);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.footer-section span 
+{
+    color: var(--primary-300);
+
 }
