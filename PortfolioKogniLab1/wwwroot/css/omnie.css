@@ -1,0 +1,29 @@
+﻿body {
+}
+
+.omnie 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.pic img
+{
+    border-radius: 2rem;
+    height: 60vh;
+}
+
+.desc 
+{
+    padding: 5rem;
+    font-size: 1.15rem;
+}
+
+.desc :not(p:first-child)
+{
+    font-family: var(--headerFont);
+    font-size: 1.5rem;
+    color: var(--primary-400);
+}

@@ -1,0 +1,33 @@
+﻿
+
+.project > img 
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    object-fit:cover;
+    margin: 0.5rem 2rem 0;
+}
+
+.projects 
+{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project 
+{
+    flex: 1;
+}
+
+.project > p 
+{
+    padding: 0 1rem;
+}
+
+.project b 
+{
+    margin-right: 1rem;
+}

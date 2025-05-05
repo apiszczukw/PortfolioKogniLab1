@@ -3,13 +3,16 @@
 <head>
 	<title> @ViewData["Title"] - Adrianna Piszcz</title>
 	<link href="~/css/style.css" rel="stylesheet" />
+	
+	@RenderSection("Style",false)
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 	<nav class="navbar">
 		<div class="nav-center">
 			<div class="nav-header">
-				<a href="#" class="nav-logo">
+				<a asp-action="Index" class="nav-logo">
 					<img src="~/pictures/logo_wlasciwe.png" />
 				</a>
 				<button class="btn nav-btn" type="button" onclick="ShowMenu()">
@@ -17,11 +20,11 @@
 				</button>
 			</div>
 			<div class="nav-links">
-				<a href="#" class="nav-link"> O mnie </a>
-				<a href="#" class="nav-link"> Projekty </a>
-				<a href="#" class="nav-link"> Curriculum Vitae </a>
+				<a asp-action="Omnie" class="nav-link"> O mnie </a>
+				<a asp-action="Projekty" class="nav-link"> Projekty </a>
+				<a asp-action="CV" class="nav-link"> Curriculum Vitae </a>
 				<div class="nav-link contact-link">
-					<a href="#" class="btn"> Kontakt </a>
+					<a asp-action="Kontakt" class="btn"> Kontakt </a>
 				</div>
 			</div>
 		</div>
