@@ -2,14 +2,35 @@
     ViewData["Title"] = "Strona główna";
 }
 
-<i class="fa-solid fa-truck-monster"></i>
+@section Style 
+{
+    <style>
+        .welcome 
+        {
+            font-family: var(--special-font);
+            font-size: 3rem;
+            min-height: calc(100vh - 4rem - 6rem - 2rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-<h3> Test nagłówka </h3>
+            position: relative;
+        }
 
-<p>
-    Testowy tekst zwykły
-</p>
+        .welcome::after 
+        {
+            content: attr(data-loading-text);
+            color: var(--primary-300);
 
-<p class="specialText">
-    Specjalny tekst
-</p>
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+}
+
+
+<div class="welcome" data-loading-text="Cześć">
+    Cześć
+
+</div>

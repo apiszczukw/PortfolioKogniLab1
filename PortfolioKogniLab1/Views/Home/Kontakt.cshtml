@@ -1,5 +1,42 @@
 ﻿@{
     ViewData["Title"] = "Kontakt";
+    
+}
+
+@section Style
+{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        h1 
+        {
+            margin-bottom: 2rem;
+        }
+
+        form
+        {
+            padding: 4rem;
+            border-radius: 0.5rem;
+            background-color: var(--primary-100);
+        }
+
+    </style>
 }
 
 <h1> Kontakt </h1>
+
+<form>
+    <div class="mb-3 form-floating">
+        <input class="form-control" type="email" name="email"/>
+        <label for="email">Podaj email</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <input class="form-control" type="text" name="topic" />
+        <label for="topic">Temat</label>
+    </div>
+    <div class="mb-3 form-floating">
+        <textarea class="form-control" name="content" style="height: 8rem;"></textarea>
+        <label for="content">Treść wiadomości</label>
+    </div>
+    <button type="submit" class="btn btn-info" style="width:100%;"> Wyślij </button>
+</form>

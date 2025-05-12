@@ -1,0 +1,73 @@
+﻿body {
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+.container {
+   
+    width: 100%;
+    background: var(--primary-100);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile {
+    text-align: center;
+}
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit:cover;
+    }
+
+.section {
+    background: var(--primary-200);
+    padding: 15px;
+    border-left: 5px solid var(--primary-400);
+    ;
+}
+
+    .section h3 {
+        margin-top: 0;
+        color: var(--primary-300);
+    }
+
+    .section p, .section ul {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+.info {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+    .info i {
+        margin-right: 8px;
+    }
+
+.section ul {
+    padding-left: 20px;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: gray;
+    margin-top: 0;
+}
