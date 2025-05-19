@@ -1,9 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using PortfolioKogniLab1.DAL;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDbContext<ProjectsContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("BazaDanych")));
+
+
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
