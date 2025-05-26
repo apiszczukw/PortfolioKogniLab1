@@ -48,6 +48,88 @@ namespace PortfolioKogniLab1.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Projects");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 10,
+                            Description = "Aplikacja umożliwiająca rezerwację wizyt w salonach usługowych (fryzjer, lekarz, itp.).",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "System Rezerwacji Wizyt",
+                            Tags = "C#, ASP.NET Core, SQL Server"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Narzędzie analizujące emocje w recenzjach produktów lub komentarzach użytkowników.",
+                            ImageLink = "https://images.pexels.com/photos/3861956/pexels-photo-3861956.jpeg",
+                            Name = "Analizator Sentimentów",
+                            Tags = "Python, NLP, scikit-learn"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Platforma do tworzenia i monitorowania kursów szkoleniowych dla firm.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "System Zarządzania Kursami",
+                            Tags = "Java, Spring Boot, PostgreSQL"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Description = "Mobilna aplikacja do planowania treningów i śledzenia postępów użytkownika.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "Aplikacja Fitness",
+                            Tags = "Flutter, Firebase, Dart"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Description = "Platforma do zgłaszania i obsługi zgłoszeń serwisowych (helpdesk).",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "System Pomocy Technicznej",
+                            Tags = "PHP, Symfony, MySQL"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Description = "Asystent głosowy wykonujący polecenia i odpowiadający na pytania użytkownika.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "Wirtualny Asystent Głosowy",
+                            Tags = "Python, SpeechRecognition, PyTorch"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Description = "Aplikacja do tworzenia, udostępniania i analizy wyników ankiet.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "System do Ankiet Online",
+                            Tags = "Vue.js, Node.js, MongoDB"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Description = "Platforma do rezerwacji i zarządzania wynajmem samochodów lub rowerów.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "System Wynajmu Pojazdów",
+                            Tags = "Ruby on Rails, PostgreSQL, Bootstrap"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Description = "Panel dla administratorów do zarządzania pracownikami, dokumentami i zasobami firmy.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "Panel Administracyjny Firmy",
+                            Tags = "Angular, .NET Core, SQL Server"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Description = "Aplikacja śledząca zmiany cen produktów w sklepach internetowych.",
+                            ImageLink = "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg",
+                            Name = "Monitoring Cen Produktów",
+                            Tags = "Python, BeautifulSoup, SQLite"
+                        });
                 });
 #pragma warning restore 612, 618
         }
